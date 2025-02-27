@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <title>POPCAT CLASSIC</title>
     <style>
+        /*body box邊距為0*/
+        body {
+            margin: 0;
+        }
         /*容器 box 高度100vh flex排版方向column 置中*/
         .container {
             display: flex;
@@ -21,9 +25,21 @@
             width: 80%;
             margin-top: 2em;
         }
+        /*標題box最大寬度600px*/
+        .title {
+            max-width: 600px;
+        }
         /*文字 box 寬度100%*/
         .cat-img {
             width: 100%;
+        }
+        /*文字 div 排版填滿剩餘空間*/
+        .cat-img {
+            flex-grow: 1;
+        }
+        /*字型 sans-serif*/
+        .cat-img {
+            font-family: sans-serif;
         }
         /*文字樣式 文字置中 文字白色 大小80px -webkit-text-stroke 3px 黑色*/
         .cat-img {
@@ -32,9 +48,23 @@
             font-size: 80px;
             -webkit-text-stroke: 3px black;
         }
+        /*防止文字被選取*/
+        .cat-img {
+            user-select: none;
+        }
+        .cat-img {
+            max-width: 800px;
+        }
         /*文字 div 背景圖片 用 id 設定imgs/p.png 圖片靠下 填滿容器contain 不重複*/
         #p {
             background-image: url('imgs/p.png');
+            background-position: center bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        /*新贈文字 div 背景圖片 用 id=op 設定 imgs/op.png*/
+        #op {
+            background-image: url('imgs/op.png');
             background-position: center bottom;
             background-size: contain;
             background-repeat: no-repeat;
